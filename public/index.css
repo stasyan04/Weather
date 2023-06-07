@@ -1,0 +1,169 @@
+/* CHATGPT THANK YOU FOR YOUR WORK! YOU ARE THE BEST!!!!! */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 20px;
+  background-color: #e6e5e5;
+}
+  
+  h1 {
+  font-size: 48px;
+  text-align: center;
+  color: #000000;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  font-family: 'Arial', sans-serif;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  background-image: linear-gradient(to right, #000000, #000000);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  }
+  
+  h2 {
+    font-size: 24px;
+    margin-top: 20px;
+  }
+  
+  p {
+    margin-bottom: 20px;
+  }
+  
+  form {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    font-size: 22px;
+  }
+  
+  label {
+    font-weight: bold;
+    margin-right: 10px;
+  }
+  
+  input[type="text"] {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+  }
+  
+  button[type="submit"] {
+    padding: 5px 10px;
+    background-color: #00cc00;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 13px;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease;
+  }
+
+  @keyframes bounce {
+    0%, 20%, 60%, 100% {
+      transform: translateY(0);
+      transform: translateY(0);
+    }
+  
+    40% {
+      transform: translateY(-20px);
+      transform: translateY(-20px);
+    }
+  
+    80% {
+      transform: translateY(-10px);
+      transform: translateY(-10px);
+    }
+  }
+
+  button[type="submit"]:hover {
+    background-color: #ff3399;
+    animation: bounce 1s;
+  }
+
+  
+
+  #weatherData {
+    width: 250px;
+    margin-top: 20px;
+    padding: 10px;
+    border: 2px solid #0000ff;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    background-color: #ccc;
+  }  
+
+  .cloud {
+    overflow: hidden;
+    position: relative;
+    width:100%;
+    padding-bottom: 56.25%;
+    height: 0;
+    background-size: cover;
+    z-index: -1;
+}
+
+.cloud img {
+    width: 100%;
+    left: 0;
+    top: 0;
+    position: absolute;
+    -webkit-user-select: none;
+    -moz-user-select: none;  
+    -ms-user-select: none;
+    user-select: none;   
+    pointer-events: none;
+    z-index: -1;
+}
+@-webkit-keyframes animCloud {
+    from {
+        -webkit-transform: translateX(100%)
+    }
+    to {
+        -webkit-transform: translateX(-100%)
+    }
+}
+@-moz-keyframes animCloud {
+    from {
+        -moz-transform: translateX(100%)
+    }
+    to {
+        -moz-transform: translateX(-100%)
+    }
+}
+@keyframes animCloud {
+    from {
+        -webkit-transform: translateX(100%);
+        -moz-transform: translateX(100%);
+        -ms-transform: translateX(100%);
+        -o-transform: translateX(100%);
+        transform: translateX(100%)
+    }
+    to {
+        -webkit-transform: translateX(-100%);
+        -moz-transform: translateX(-100%);
+        -ms-transform: translateX(-100%);
+        -o-transform: translateX(-100%);
+        transform: translateX(-100%)
+    }
+}
+.cloud1 {
+    -webkit-animation: animCloud 20s infinite linear;
+    -moz-animation: animCloud 20s infinite linear;
+    animation: animCloud 20s infinite linear
+}
+.cloud2 {
+    -webkit-animation: animCloud 40s infinite linear;
+    -moz-animation: animCloud 40s infinite linear;
+    animation: animCloud 40s infinite linear
+}
+.cloud3 {
+    -webkit-animation: animCloud 60s infinite linear;
+    -moz-animation: animCloud 60s infinite linear;
+    animation: animCloud 60s infinite linear
+}
+.cloud4 {
+    -webkit-animation: animCloud 80s infinite linear;
+    -moz-animation: animCloud 80s infinite linear;
+    animation: animCloud 80s infinite linear
+}
