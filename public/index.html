@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css" />
+    <title>Weather</title>
+</head>
+<body>
+    
+    <h1>Weather for Shems by Stanislav :/</h1>
+    <h2>It is a website with weather for term paper</h2>
+    <p>Please, input city in English (or not) and it will show information about weather (but as far as I remember the information is updated every 6 hours).</p>
+
+    <form id="weatherForm">
+        <label for="city">City:</label>
+        <input type="text" id="city" name="city" required>
+        <button type="submit">Find</button>
+    </form>
+    
+    <div id="weatherData"></div>
+    <div class="cloud">
+        <img src="/photos/cloud-01.png" alt="" class="cloud1">
+        <img src="/photos/cloud-02.png" alt="" class="cloud2">
+        <img src="/photos/cloud-03.png" alt="" class="cloud3">
+        <img src="/photos/cloud-04.png" alt="" class="cloud4">
+    </div>
+
+    <script src="index.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/awesomplete/1.1.5/awesomplete.js" integrity="sha512-t3zV/oAkSZUrvb/7p1q1+uh/i56JinQ+bmiulnHhbHZc7dq09CxJ1BByyi7A4+lF76+CcJtSVFtb7na7Oe7Cgg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/awesomplete/1.1.5/awesomplete.css" integrity="sha512-JcmylNmvdZJ8UcYcSDFWhvE6DwI8bKcnPKvBlwU2w/aRJ6qiZErv1Ixq99ykZgy3cCSp+QJp9su5buNLQjytng==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="autocomplete.js"></script>
+</body>
+</html>
